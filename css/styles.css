@@ -18,7 +18,7 @@ nav ul li{
 
     padding: 5px;
 }
-li {
+.nav-list li, #closing-nav li  {
     list-style:none;
 }
 a {
@@ -36,7 +36,7 @@ h1,h3 {
     font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
-    
+
 /* main styles */
 
 .header-nav, 
@@ -44,6 +44,7 @@ h1,h3 {
  .intro-content,
  .main-content,
  .footer-content,
+ .skills-list,
  .final-content,
  .contact-details,
  .main-port{
@@ -84,17 +85,16 @@ header, .intro-content img {
   flex-direction: row;
 }
 
-#portfolio {
+#portfolio, #skills{
     display:flex;
     justify-content: space-around;
 
 }
 
-.main-content,.main-port, .footer-content {
+.main-content,.main-port, .footer-content,.skills-list {
   align-items: center;
     
 }
-
 
 .main-content p:last-child, .header-nav, .intro-content p{
    padding: 1rem 1.5rem;
@@ -132,17 +132,22 @@ header, .intro-content img {
 /* media querries */
 @media screen and (min-width:768px) {
     .nav-list{
-        flex-direction: row;
         margin-top:0;
         font-size:1rem;
     }
 
-   #portfolio,#contact{
+    .nav-list, .main-content{
+        flex-direction: row;
+    }
+  
+    #portfolio,#contact{
         font-size:1.5rem;
     }
+
     .intro-content{
         flex-wrap: nowrap;
     }
+
     .intro-content img {
         width:300px;
         order: 1;
@@ -151,21 +156,19 @@ header, .intro-content img {
     }
 
     .intro-content p {
-       max-width:800px;
-       font-size: 20px;
+       width:800px;
+       font-size: 1.25rem;
     }
 
- 
-  
-    .main-content{
+    .main-content, .final-content ul{
         display: flex;
-        flex-direction: row;
     }
     .main-port{
         flex:1 250px;
     }
+
     .footer-content p {
-        max-width:600px;
+        width:600px;
      
     }
 
@@ -174,7 +177,6 @@ header, .intro-content img {
     }
     
     .final-content ul{
-        display:flex;
         text-transform: uppercase;
     }
 
@@ -203,7 +205,7 @@ header, .intro-content img {
     margin-top: 0;
     padding-top: 0.2rem;
     font-size: 1.5rem;
-    max-width:450px;
+    width:450px;
    }
 
 
