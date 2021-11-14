@@ -9,7 +9,9 @@
    line-height:1.5;
    letter-spacing :0.05rem;
    hyphens: auto; 
+   overflow: hidden;
 }
+
 main {
     flex: 1;
 }
@@ -91,7 +93,8 @@ header, .intro-content img {
 
 }
 
-.main-content,.main-port, .footer-content,.skills-list {
+
+.main-content,.main-port, .footer-content,.skills-list{
   align-items: center;
     
 }
@@ -99,6 +102,10 @@ header, .intro-content img {
 .main-content p:last-child, .header-nav, .intro-content p{
    padding: 1rem 1.5rem;
   
+}
+
+.contact-details{
+    justify-content: space-around;
 }
 
 .main-content p:last-child, .header-nav, .intro-content p, .contact-details p:last-child{
@@ -115,6 +122,10 @@ header, .intro-content img {
 
 .footer-content ul {
   display: none;
+}
+
+.contact-details{
+    max-width:300px;
 }
 
 .final-content {
@@ -185,6 +196,7 @@ header, .intro-content img {
      font-size:1rem;
     }
     
+
 }
 
 @media screen and (min-width:1024px) {
