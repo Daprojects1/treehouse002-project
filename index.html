@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="normalize.css">
     <link  rel="stylesheet"  href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
    <div class="bodyimg">
@@ -27,56 +27,64 @@
        </div>
         <main> 
             <section class="intro-content">
-            <p>Hi, I'm a front-end developer who loves responsive design and css.i recently finished learning front-end web development at treehous and am excited to put all my skills to use </p>
+            <p>Hi, I'm a front-end developer who loves responsive design and css.I recently finished learning front-end web development at treehouse and am excited to put all my skills to use! </p>
             <img src="images/responsive_layout_v3-2/images/responsive-layout-profile.png" alt="profile-picture">
             </section>
             <section class="main-content">
-                <h3 id="portfolio">Portfolio</h3>
+                <h2 id="portfolio">Portfolio</h2>
+                <div class="portfolio-pt">   <!-- To help group two of the portfolio content together-->
                 <div class="main-content"> 
                 <img src="images/responsive_layout_v3-2/images/portfolio-1.png" alt="the-marketing-page"> 
-                <p>Marketing Page</p>
-                <p> This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+                <p><strong>Marketing Page</strong></p>
+                <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
                 </div>
                 <div class="main-content"> 
                 <img src="images/responsive_layout_v3-2/images/portfolio-2.png" alt="the-search-page">
-                <p>Search Page</p>
+                <p><strong>Search Page</strong></p>
                 <p>This Project searces through a specific database to find information that the user is trying to look up.</p>
                 </div>
+                </div>
+                <div class="portfolio-pt">     <!-- To help group two of the portfolio content together-->
                 <div class="main-content"> 
                     <img src="images/responsive_layout_v3-2/images/portfolio-3.png" alt="travel-app-image">
-                    <p>Travel App</p>
+                    <p><strong>Travel App</strong></p>
                     <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
                 </div>
                 <div class="main-content"> 
                     <img src="images/responsive_layout_v3-2/images/portfolio-4.png" alt="my-favourite-spots">
-                    <p>Map of Favourite Spots</p>
+                    <p><strong>Map of Favourite Spots</strong></p>
                     <p>This project uses mapping axis to plot points for my favourite spots in the city for a do-it yourself walking tour.</p>
                 </div>
+                </div>
+                <div class="portfolio-pt">     <!-- To help group two of the portfolio content together-->
                 <div class="main-content"> 
                     <img src="images/responsive_layout_v3-2/images/portfolio-5.png" alt="the-photo-gallery">
-                    <p>Photo Galley</p>
+                    <p><strong>Photo Gallery</strong></p>
                     <p>This project shows pictures froma a recent trip to the viewer and allows them to easily navigate through photos.</p>
-
                 </div>
                 <div class="main-content"> 
                 <img src="images/responsive_layout_v3-2/images/portfolio-6.png" alt="the-calculator">
-                <p> Calculator</p>
+                <p><strong>Calculator</strong></p>
                 <p>Someone can enter in the numbers they want,and press the big blue button and get the result they want.</p>
+                </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <h4 id="contact">Contact</h4>
-            <p>If you're interested in chatting or want more infromationabout what I've been working on,I'd love to hear from you!</p>
+        <footer class="footer-content">
+            <h3 id="contact">Contact</h3>
+            <p >If you're interested in chatting or want more information about what I've been working on,I'd love to hear from you!</p>
+            <div class="contact-details">
             <p> Phone <strong>+1(111)555-1234</strong></p>
             <p>Email <strong>email@yoursite.com</strong></p>
-            <div>
+            </div>
+            <div class="final-content">
                 <h4>David A</h4>
-                <ul>
+                <ul id="closing-nav">
                     <li><a href="#">home</a></li>
                     <li><a href="#portfolio">portfolio</a></li>
                     <li><a href="#contact">contact</a></li>  
                 </ul>
+                <p><a href="#">back to top</a></p>
             </div>
         </footer>
   </div> 
