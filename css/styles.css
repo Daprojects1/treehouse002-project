@@ -225,6 +225,15 @@ header, .intro-content img {
        width:300px;
    }
 
+   .main-port p{
+       width:300px;
+   }
+
+   .main-port .heading-para{
+       display: flex;
+       justify-content: space-around;
+   }
+
    .main-content{
        max-width:1000px;
        margin:auto;
